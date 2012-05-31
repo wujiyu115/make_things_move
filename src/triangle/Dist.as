@@ -7,7 +7,7 @@ package triangle
 	import flash.text.TextField;
 	
 	/**
-	 * ...
+	 * 两点距离
 	 * @author far
 	 */
 	public class Dist extends Sprite

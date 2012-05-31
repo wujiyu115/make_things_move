@@ -8,7 +8,7 @@ package triangle
 	import flash.geom.Rectangle;
 	
 	/**
-	 * ...
+	 * 矩形内拖动
 	 * @author far
 	 */
 	public class DragInRectangle extends Sprite 

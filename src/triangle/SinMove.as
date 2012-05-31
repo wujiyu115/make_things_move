@@ -5,7 +5,7 @@ package triangle
 	import flash.events.Event;
 	
 	/**
-	 * ...
+	 * 波形运动
 	 * @author far
 	 */
 	public class SinMove extends Sprite

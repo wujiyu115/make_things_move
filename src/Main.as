@@ -3,13 +3,14 @@ package
 	import flash.display.DisplayObject;
 	import flash.display.Sprite;
 	import flash.events.Event;
+	import triangle.Accelerated;
 	import triangle.CursorFllow;
 	import triangle.Dist;
 	import triangle.DragInRectangle;
 	import triangle.SinMove;
 	import triangle.Speed;
 	import triangle.TriangleTest;
-	
+	import triangle.CursorFllow2;
 	/**
 	 * ...
 	 * @author far
@@ -37,7 +38,7 @@ package
 			centerMc(tt);
 			var sinMove:SinMove = new SinMove();
 			centerMc(sinMove);
-			var dist:Dist  = new Dist(stage);
+			var dist:Dist = new Dist(stage);
 			centerMc(dist);
 			var speed:Speed = new Speed();
 			centerMc(speed);
@@ -45,7 +46,11 @@ package
 			centerMc(dr);
 			var cursor:CursorFllow = new CursorFllow();
 			centerMc(cursor);
-			addChild(cursor);
+			var acce:Accelerated = new Accelerated(stage);
+			centerMc(acce);
+			var cursor2:CursorFllow2 = new CursorFllow2();
+			centerMc(cursor2);
+			addChild(cursor2);
 		
 		}
 		

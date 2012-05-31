@@ -3,7 +3,7 @@ package comps
 	import flash.display.Sprite;
 	
 	/**
-	 * ...
+	 * 小球
 	 * @author far
 	 */
 	public class Ball extends Sprite 

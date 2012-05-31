@@ -6,7 +6,7 @@ package triangle
 	import flash.display.Sprite;
 	
 	/**
-	 * ...
+	 * 弧度 角度
 	 * @author far
 	 */
 	public class TriangleTest extends Sprite

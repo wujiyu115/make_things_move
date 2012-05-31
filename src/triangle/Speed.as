@@ -5,7 +5,7 @@ package triangle
 	import flash.events.Event;
 	
 	/**
-	 * ...
+	 * 向量运动 
 	 * @author far
 	 */
 	public class Speed extends Sprite

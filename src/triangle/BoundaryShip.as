@@ -10,7 +10,7 @@ package triangle
 	import flash.ui.Keyboard;
 	
 	/**
-	 * ...
+	 * 飞船加速度 ，加上摩擦力
 	 * @author far
 	 */
 	public class BoundaryShip extends Sprite
@@ -21,6 +21,7 @@ package triangle
 		private var vx:Number = 0; //x轴速度 
 		private var vy:Number = 0; //y 轴速度 
 		private var thrust:Number = 0; //加速度 
+		private var friction:Number = .9; //摩擦系数,数值在0-1,越大摩擦力越小
 		
 		public function BoundaryShip(mystage:Stage)
 		{
@@ -43,6 +44,9 @@ package triangle
 			var ay:Number = Math.sin(angle) * thrust;
 			vx += ax;
 			vy += ay;
+			//摩擦力
+			//vx *= friction;
+			//vy *= friction;
 			ship.x += vx;
 			ship.y += vy;
 			

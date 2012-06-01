@@ -5,6 +5,7 @@ package
 	import flash.display.Sprite;
 	import flash.events.Event;
 	import triangle.Accelerated;
+	import triangle.BounceBall;
 	import triangle.BoundaryBall;
 	import triangle.BoundaryShip;
 	import triangle.CursorFllow;
@@ -37,29 +38,26 @@ package
 		
 		private function test():void
 		{
-			var tt:TriangleTest = new TriangleTest();
-			centerMc(tt);
-			var sinMove:SinMove = new SinMove();
-			centerMc(sinMove);
-			var dist:Dist = new Dist(stage);
-			centerMc(dist);
-			var speed:Speed = new Speed();
-			centerMc(speed);
-			var dr:DragInRectangle = new DragInRectangle(stage);
-			centerMc(dr);
-			var cursor:CursorFllow = new CursorFllow();
-			centerMc(cursor);
-			var acce:Accelerated = new Accelerated(stage);
-			centerMc(acce);
-			var cursor2:CursorFllow2 = new CursorFllow2();
-			centerMc(cursor2);
-			
-			var boundball:BoundaryBall = new BoundaryBall(stage);
-			centerMc(boundball);
-			
-			var ship:BoundaryShip = new BoundaryShip(stage);
-			//centerMc(ship);
-			addChild(ship);
+			//var tt:TriangleTest = new TriangleTest();
+			//centerMc(tt);
+			//var sinMove:SinMove = new SinMove();
+			//centerMc(sinMove);
+			//var dist:Dist = new Dist(stage);
+			//centerMc(dist);
+			//var speed:Speed = new Speed();
+			//centerMc(speed);
+			//var dr:DragInRectangle = new DragInRectangle(stage);
+			//centerMc(dr);
+			//var cursor:CursorFllow = new CursorFllow();
+			//centerMc(cursor);
+			//var acce:Accelerated = new Accelerated(stage);
+			//centerMc(acce);
+			//var cursor2:CursorFllow2 = new CursorFllow2();
+			//centerMc(cursor2);
+			//var boundball:BoundaryBall = new BoundaryBall(stage);
+			//var ship:BoundaryShip = new BoundaryShip(stage);
+			var bounceBall:BounceBall = new BounceBall(stage);
+			addChild(bounceBall);
 			
 			
 		

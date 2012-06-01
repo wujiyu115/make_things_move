@@ -14,7 +14,7 @@ package triangle
 	{
 		private var balls:Array = [];
 		private var size:int = 20;
-		private var sta:Stage;
+		protected var sta:Stage;
 		
 		public function BoundaryBall(mystage:Stage)
 		{
@@ -51,7 +51,7 @@ package triangle
 		
 		}
 		
-		private function dealBall(ball:Ball, index:int):void
+		protected function dealBall(ball:Ball, index:int):void
 		{
 			var ridus:Number = ball.width / 2;
 			var left:Number = -ridus;

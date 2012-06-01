@@ -1,9 +1,12 @@
 package
 {
+	import comps.Ship;
 	import flash.display.DisplayObject;
 	import flash.display.Sprite;
 	import flash.events.Event;
 	import triangle.Accelerated;
+	import triangle.BoundaryBall;
+	import triangle.BoundaryShip;
 	import triangle.CursorFllow;
 	import triangle.Dist;
 	import triangle.DragInRectangle;
@@ -50,7 +53,15 @@ package
 			centerMc(acce);
 			var cursor2:CursorFllow2 = new CursorFllow2();
 			centerMc(cursor2);
-			addChild(cursor2);
+			
+			var boundball:BoundaryBall = new BoundaryBall(stage);
+			centerMc(boundball);
+			
+			var ship:BoundaryShip = new BoundaryShip(stage);
+			//centerMc(ship);
+			addChild(ship);
+			
+			
 		
 		}
 		

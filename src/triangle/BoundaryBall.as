@@ -39,7 +39,7 @@ package triangle
 			}
 		}
 		
-		private function enterFrameHandler(e:Event):void
+		protected function enterFrameHandler(e:Event):void
 		{
 			for (var i:int = balls.length - 1; i >= 0; i--)
 			{
@@ -77,18 +77,3 @@ package triangle
 	}
 }
 
-class Bound
-{
-	private var left:Number;
-	private var right:Number;
-	private var top:Number;
-	private var bottom:Number;
-	
-	public function Bound(lefts:Number, rights:Number, tops:Number, bottoms:Number)
-	{
-		this.top = tops;
-		this.bottom = bottoms;
-		this.left = lefts;
-		this.right = rights;
-	}
-}

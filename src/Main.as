@@ -1,20 +1,25 @@
 package
 {
+	import comps.Ball;
 	import comps.Ship;
 	import flash.display.DisplayObject;
 	import flash.display.Sprite;
 	import flash.events.Event;
+	import hit.ObjectHitTest;
+	import startDrag.CursorAdmin;
+	import startDrag.MoveDrag;
 	import triangle.Accelerated;
 	import triangle.BounceBall;
 	import triangle.BoundaryBall;
 	import triangle.BoundaryShip;
 	import triangle.CursorFllow;
 	import triangle.Dist;
-	import triangle.DragInRectangle;
+	import startDrag.DragInRectangle;
 	import triangle.SinMove;
 	import triangle.Speed;
 	import triangle.TriangleTest;
 	import triangle.CursorFllow2;
+	
 	/**
 	 * ...
 	 * @author far
@@ -56,11 +61,13 @@ package
 			//centerMc(cursor2);
 			//var boundball:BoundaryBall = new BoundaryBall(stage);
 			//var ship:BoundaryShip = new BoundaryShip(stage);
-			var bounceBall:BounceBall = new BounceBall(stage);
-			addChild(bounceBall);
-			
-			
-		
+			//var bounceBall:BounceBall = new BounceBall(stage);
+			//var cusoradmin:CursorAdmin = new CursorAdmin().init(stage);
+			//cusoradmin.setCursor(new Ball());
+			//var moveDrag:MoveDrag  = new startDrag.MoveDrag(stage); 
+			var objecthit:ObjectHitTest = new ObjectHitTest();
+			centerMc(objecthit);
+			addChild(objecthit);
 		}
 		
 		public function centerMc(mc:DisplayObject):void

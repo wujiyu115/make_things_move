@@ -94,7 +94,7 @@ package triangle
 			var bx:Number = ship.x;
 			var by:Number = ship.y;
 			
-			trace(bx, by, left, right, top, bottom);
+			//trace(bx, by, left, right, top, bottom);
 			
 			//环绕
 			if (bx > right)

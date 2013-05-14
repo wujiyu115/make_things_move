@@ -61,7 +61,7 @@ package triangle
 			
 			var bx:Number = ball.x;
 			var by:Number = ball.y;
-			
+			//超出边界就移除
 			if (bx > right || bx < left || by > bottom || by < top)
 			{
 				removeChild(ball);

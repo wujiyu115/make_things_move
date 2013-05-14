@@ -27,10 +27,10 @@ package triangle
 			ellipseMove();
 		}
 		
-		//波形/双角波形
+		//波形
 		private function sinaMove():void
 		{
-			//ball.x += Math.sin(angle) * range;
+			ball.x += _xSpeed;
 			ball.y = Math.sin(angle) * range;
 			angle += speed;
 		}
@@ -38,7 +38,7 @@ package triangle
 		//心跳运动
 		private function heartMove():void
 		{
-			ball.scaleX = ball.scaleY = Math.sin(angle) * range;
+			ball.scaleX = ball.scaleY = 1+Math.sin(angle) * range;
 			angle += speed;
 		}
 		
@@ -58,9 +58,10 @@ package triangle
 			angle += speed;
 		}
 		
-		private var angle:Number = 0;
-		private var speed:Number = .1;
-		private var range:Number = 50;
+		private var _xSpeed:Number = 1;
+		private var angle:Number = 0; //递增角度
+		private var speed:Number = .1;//速度
+		private var range:Number = 50;//放大倍数
 	
 	}
 

@@ -9,7 +9,7 @@ package comps
 	public class Ball extends Sprite 
 	{
 		public var vx:Number=1;
-		public var vy:Number=1;
+		public var vy:Number = 1;
 		public function Ball(size:int = 10, color:uint=0x000000 ) 
 		{
 			graphics.beginFill(color);

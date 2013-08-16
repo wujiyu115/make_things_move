@@ -1,6 +1,8 @@
 package
 {
 	import AngleBounce.AngleBounce;
+	import astar.AStarTest;
+	import astar.Xunlu;
 	import comps.Ball;
 	import comps.Ship;
 	import easing.CursorFllow3;
@@ -17,7 +19,6 @@ package
 	import hit.gridcollision.GridCollision3;
 	import hit.HitTestPoint;
 	import hit.ObjectHitTest;
-	import hit.quadtree.Array_collition;
 	import hit.quadtree.hitTest.QuadTreeHitTest;
 	import hit.quadtree.QuadTree_collition;
 	import rotation.Rotatel;
@@ -146,9 +147,9 @@ package
 			//addChild(quad);
 			
 			//四叉树增强,及网格碰撞
-			var quad1:QuadTreeHitTest = new QuadTreeHitTest();
-			quad1.test(5);
-			addChild(quad1);
+			//var quad1:QuadTreeHitTest = new QuadTreeHitTest();
+			//quad1.test(5);
+			//addChild(quad1);
 		
 			//旋转
 			//var ro:Rotatel = new Rotatel();
@@ -166,6 +167,13 @@ package
 		
 			//第11章 台球物理
 			//Advanced.ActionScript 3.Animation
+			
+			//a*寻路初探
+			var astarTest:AStarTest = new AStarTest();
+		    addChild(astarTest);
+			//广度搜索
+			//var xunTest:Xunlu = new Xunlu();
+		    //addChild(xunTest);
 		}
 		
 		public function centerMc(mc:DisplayObject):void
